@@ -2,7 +2,7 @@ import os
 from time import sleep
 """
 PROYECTO 1 : CRUD DE EMPRESAS
-NOMBRE : CÉSAR MAYTA
+NOMBRE : CÉSAR MAYTA AVALOS
 """
 
 dic_empresas = {
@@ -37,6 +37,10 @@ while(True):
         print("=" * ANCHO)
         print(" " * 10 + "MOSTRAR EMPRESA")
         print("=" * ANCHO)
+        for ruc,info in dic_empresas.items():
+            print(f'RUC : {ruc}')
+            print(f"Razón Social : {info['razon_social']}")
+            print(f"Dirección : {info['direccion']}")
         
     elif opcion == 3:
         print("=" * ANCHO)
